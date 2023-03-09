@@ -2,6 +2,8 @@ package figury;
 
 import interfejsFigury.Figura;
 
+import static java.lang.Math.sqrt;
+
 public class Trojkat implements Figura {
     private double a,b;
 
@@ -12,7 +14,9 @@ public class Trojkat implements Figura {
 
     @Override
     public double obwod() {
-        return a + b + a*2;
+        double c = a*2+b*2;
+        c = sqrt(c);
+        return a + b + c;
     }
 
     @Override

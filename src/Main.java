@@ -25,9 +25,8 @@ public class Main {
 
         System.out.println("Podaj dlugosc boku a prostokata:");
         System.out.println("podaj dlugosc boku b prostokata");
-        double at = scanner.nextDouble();
         double bt = scanner.nextDouble();
-        figury.add(new Prostokat(at,bt));
+        figury.add(new Prostokat(scanner.nextDouble(),bt));
 
         for(Figura wys : figury){
             System.out.println(wys.getClass().getSimpleName() +": obwod: " + wys.obwod() + " powierzchnia " + wys.powierzchnia() );
